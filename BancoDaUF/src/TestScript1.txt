@@ -1,0 +1,9 @@
+cliente1=createCliente ID="0001" nome="Maria da Paz"
+cliente2=createCliente ID="0002" nome="Ze Guerra"
+conta1=createConta conta="0001" cliente="0001"
+conta2=createConta conta="0002" cliente="0002"
+
+expect ${conta1} findByNum num="0001"
+expect ${conta2} findByNum num="0002"
+
+quit
